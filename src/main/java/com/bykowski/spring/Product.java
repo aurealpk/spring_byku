@@ -1,15 +1,21 @@
 package com.bykowski.spring;
 
-import java.math.BigDecimal;
-
 public class Product {
 
     private String name;
 
-    private BigDecimal price;
+    private int price;
 
-    public Product(String name, BigDecimal price) {
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
